@@ -8,7 +8,7 @@ public class DataTypesTest {
     vs running application code
      */
     @Test
-    //Demonstrate numeric types
+    //Demonstrate numeric types: Integer, Long (A very big Integer), Float (Decimal), Double (Float with better precision
     public void declaringNumberVariables() {
 
         /* *********** INTEGERS ************ */
@@ -59,6 +59,8 @@ public class DataTypesTest {
         String replaceFirstName = name.replace("Sarah", "Mary");
         System.out.println("String " + name + " with their firstname replaced becomes their sister's name: " + replaceFirstName);
 
+        System.out.println("String ' Poppy ' with spaces around it has length: " + " Poppy ".length() );
         System.out.println("Extra spaces surrounding ' Poppy ' when trimmed out reads: " + " Poppy ".trim() );
+        System.out.println("String ' Poppy ' when trimmed has a new shorter length: " + " Poppy ".trim().length() );
     }
 }

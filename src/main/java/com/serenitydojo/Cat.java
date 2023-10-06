@@ -1,7 +1,7 @@
 package com.serenitydojo;
 
 public class Cat {
-    //Ideally these variables should be private so Class "WhenCreatingObjectsTest.java" can't manipulate these values directly
+    //Ideally these variables should be PRIVATE so Class "WhenCreatingObjectsTest.java" can't manipulate these values directly
     //Instead, any calling Class will need to go via the getter methods
     public String name;
     public String favoriteFood;
@@ -15,7 +15,7 @@ public class Cat {
     public static final String COMMON_CAT_NOISE_SMALL = "small meow";
 
     //This is a default constructor that you don't need to define explicitly UNLESS
-    //You have another constructor that's parameterized which is true in my case here below
+    //You have another constructor that's parameterized - which is true in my case here below
     public Cat() {
 
     }
