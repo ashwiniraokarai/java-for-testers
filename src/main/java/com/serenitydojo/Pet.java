@@ -9,9 +9,9 @@ public abstract class Pet {
     private String name;
     private Integer age;
 
-    public Pet(){
-
-    }
+//    public Pet(){
+//
+//    }
     public Pet(String name, Integer age){
         this.name = name;
         this.age = age;

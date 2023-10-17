@@ -18,12 +18,11 @@ public class DogInheritsFromPet extends Pet {
 
     //automatically oevrrides makeNoise() method defined in Parent Pet Class
     //..because of the same method name and parameter pattern
+    @Override
     public String makeNoise(){
         return "woof";
     }
 
     //Implements the abstract method declared in Parent Pet Class
-    public String goForWalks(){
-        return "enjoying a walk with my owner";
-    }
+    public String goForWalks() { return "enjoying a walk with my owner"; }
 }

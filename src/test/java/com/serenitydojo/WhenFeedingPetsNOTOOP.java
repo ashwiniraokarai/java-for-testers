@@ -9,7 +9,7 @@ Demo: Operating on methods with simple conditional logic.
 Although this example does call the feeder object, nothing about it is OOP.
 The method within the feeder class simply feeds a pet based on the string passed to it.
 Although the naming scheme and theme might suggest otherwise, this does NOT build on the Pet class and child class concept from previous examples.
-Those worked off of inheritance and abstract classes eliminating the need for conditional logic
+Those worked off of inheritance and abstract classes eliminating the need for conditional logic (close to real - world code)
  */
 public class WhenFeedingPetsNOTOOP {
     @Test

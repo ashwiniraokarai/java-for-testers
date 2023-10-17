@@ -9,17 +9,13 @@ public class CatInheritsFromPet extends Pet {
 
     public String favoriteFood;
 
-    //This is a default constructor that you don't need to define explicitly UNLESS
-    //You have another constructor that's parameterized which is true in my case here below
-    public CatInheritsFromPet() {
-
-    }
     public CatInheritsFromPet(String name, Integer age, String favoriteFood) {
-        //don't need to set name and age here anymore now that I have parent Pet Class constructor that can handle the assignment for me:
+        // don't need to set name and age here anymore now that I have offloaded it to the parent Pet Class constructor:
+        // Also it's NOT that name and age are inaccessible from parent. If they were not Private in the Parent class, they would totally have been accessible
         //this.name = name;
         //this.age = age;
 
-        //call the parent Pet Class's constructor
+        //call the parent Pet Class's constructor to have it set its own Private attributes
         super(name, age);
         this.favoriteFood = favoriteFood;
     }
@@ -52,6 +48,7 @@ public class CatInheritsFromPet extends Pet {
 
     //automatically oevrrides makeNoise() method defined in Parent Pet Class
     //..because of the same method name and parameter pattern
+    @Override
     public String makeNoise(){
         return "meow";
     }

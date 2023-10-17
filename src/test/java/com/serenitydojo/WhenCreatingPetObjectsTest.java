@@ -69,7 +69,7 @@ public class WhenCreatingPetObjectsTest {
     }
 
 
-    //Demo: Abstract method
+    //Demo: Abstract method in parent Pet class. Concrete methods in Child classes.
     @Test
     public void pets_go_for_walks(){
         Pet kitty = new CatInheritsFromPet("kitty", 5, "tuna");

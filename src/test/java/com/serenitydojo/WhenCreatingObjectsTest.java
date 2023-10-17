@@ -42,7 +42,7 @@ public class WhenCreatingObjectsTest {
         System.out.println(marla.getAge() + " year(s) old.");
         System.out.println("Their favorite food is " + marla.getFavoriteFood() +".");
 
-        //There's an even more CONCISE APPROACH TO SER attribute value as you create your Cat Object
+        //There's an even more CONCISE APPROACH TO SET attribute value as you create your Cat Object
         //..via defining a special method on the Class called CONSTRUCTOR that can accept data to process/ set
 
         Cat geck = new Cat("Geck", 1);

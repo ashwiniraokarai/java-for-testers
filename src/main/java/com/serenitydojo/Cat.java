@@ -7,7 +7,7 @@ public class Cat {
     public String favoriteFood;
     public Integer age;
 
-    //This variable belongs to the Class, so ALL objects get the same value unless the calling code change it first
+    //This variable belongs to the Class, so ALL objects get the same value unless the calling code change it first (since its public, which is not the case irl)
     public static String COMMON_CAT_NOISE = "meow";
 
     //Another static variable that belongs to the Class, so ALL objects get the same value as usual

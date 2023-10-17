@@ -57,7 +57,7 @@ public class BasicListsAndSets {
         //Add the repeat color (won't error but will not add the repeat element (dissimilar to List_
         setOfColors.add("aRepeatColor");
 
-        //Loop through the list using an iterator and read the values
+        //Loop through the Set using an iterator and read the values
         System.out.println("loop over HashSet using special for-loop:");
         System.out.println("Notice that elements do not stick to the order in which they were added. " +
                 "Also notice how aRepeatColor did not get added to the Set a second time");
