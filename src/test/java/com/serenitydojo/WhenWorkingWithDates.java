@@ -37,7 +37,7 @@ public class WhenWorkingWithDates {
 @Test
 //using parse() you can convert a Date in another form to Date
 //here Date is again provided as a String Object is converted to a Date Object
-//Except the String Object is formatted differently than what Date Object would expect (YYYY-MM-DD). So a formatter parameter is used to describe the og format the String came with
+//Except the provided String Object is formatted differently than what Date Object would expect (YYYY-MM-DD). So a formatter parameter is used to describe the og format of the String came with
     public void convertingStringToFormattedDateUsingParse(){
     String firstOfNovember2023AsAString = "11/01/2023"; //November 01 2023
     LocalDate firstOfNovemberAsAFormattedDateObject = LocalDate.parse(firstOfNovember2023AsAString, DateTimeFormatter.ofPattern("MM/dd/uuuu"));
