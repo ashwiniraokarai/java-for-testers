@@ -5,7 +5,15 @@ import org.junit.Test;
 import java.util.EnumMap;
 
 public class WhenWorkingWithEnums {
-    
+@Test
+//.valueOf method is helpful to caller who can conveniently pass strings to fetch the enum constants
+    public void getEnumConstantBasedOnString(){
+        LevelEnum HIGH = LevelEnum.valueOf("HIGH");
+        System.out.println("valueOf fetches the Enum constant for the string representation you provide");
+        System.out.println("Enum constant for the String \"High\" is: " +HIGH );
+    }
+
+
 @Test
 //create an Enum class called Label
 //extract a value
