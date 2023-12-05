@@ -5,10 +5,10 @@ import java.time.LocalDateTime;
 public class Dog {
     private String name, breed, color, optionalFavoriteFood, optionalFavoriteToy;
     private LocalDateTime dateOfBirth;
-    public interface WithBreed{
-        public WithColor ofBreed(String breed);
+    public interface RequiredBreed {
+        public RequiredColor ofBreed(String breed);
     }
-    public interface WithColor{
+    public interface RequiredColor {
         public  DogBuilder ofColor(String color);
     }
 
@@ -21,18 +21,18 @@ public class Dog {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public static WithBreed called(String name) {
+    public static RequiredBreed called(String name) {
         return new DogBuilder(name);
     }
 
-    public static class DogBuilder implements WithColor, WithBreed{
+    public static class DogBuilder implements RequiredColor, RequiredBreed {
         private String name, breed, color, optionalFavoriteFood, optionalFavoriteToy;
         private LocalDateTime dateOfBirth;
         public DogBuilder(String name){
              this.name = name;
         }
 
-        public WithColor ofBreed(String breed) {
+        public RequiredColor ofBreed(String breed) {
             this.breed = breed;
             return this;
         }
