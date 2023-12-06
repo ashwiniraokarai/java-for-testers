@@ -21,7 +21,7 @@ public class Dog {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public static RequiredBreed called(String name) {
+    public static RequiredBreed named(String name) {
         return new DogBuilder(name);
     }
 

@@ -29,7 +29,7 @@ public class WhenWeCreateANewDog {
         //write the other builder methods
         //finish with the last method and return a Dog instance
 
-            Dog fido = Dog.called("Fido")   //implicitly required field/ method - needed to trigger DogBreeder object
+            Dog fido = Dog.named("Fido")   //implicitly required field/ method - needed to trigger DogBreeder object
                 .ofBreed("Labrador")    //field/method made explicitly required thro interface type object
                 .ofColor("black")   //field/method made explicitly required thro interface type object
                 .bornOn(FOURTH_OF_JULY);    //implicitly required field - needed to trigger Dog object
@@ -42,7 +42,7 @@ public class WhenWeCreateANewDog {
 
     @Test
     public void can_set_optional_fields(){
-        Dog cloud = Dog.called("cloud")
+        Dog cloud = Dog.named("cloud")
                 .ofBreed("poodle")
                 .ofColor("gray")
                 .likesToEat("biscuits")        //set optional field
@@ -59,7 +59,7 @@ public class WhenWeCreateANewDog {
 
     @Test
     public void can_skip_optional_fields(){
-        Dog cloud = Dog.called("cloud")
+        Dog cloud = Dog.named("cloud")
                 .ofBreed("poodle")
                 .ofColor("gray")
 //                .likesToEat("biscuits")        //skip optional field
