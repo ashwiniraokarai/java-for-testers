@@ -25,6 +25,7 @@ public class Dog {
         return new DogBuilder(name);
     }
 
+    //Builder code
     public static class DogBuilder implements RequiredColor, RequiredBreed {
         private String name, breed, color, optionalFavoriteFood, optionalFavoriteToy;
         private LocalDateTime dateOfBirth;
